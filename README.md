@@ -1,5 +1,3 @@
 # weather-api
 
-DRAFT
-
-Using https://openweather.co.uk/ to retrieve weather data
+Creating a basic weather application utlizing the openweather API from https://openweather.co.uk/ to retrieve data.
