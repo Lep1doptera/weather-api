@@ -1,7 +1,7 @@
 import { weatherKey } from "../env.js";
 //console.log("test");
 
-function getWeather(weatherKey) {
+function getWeather() {
   const apiKey = weatherKey;
   const city = document.getElementById("city").value;
 
@@ -33,6 +33,8 @@ function getWeather(weatherKey) {
       alert("Error fetching hourly forecast data. Please try again.");
     });
 }
+
+window.getWeather = getWeather;
 
 function displayWeather(data) {
   const tempDivInfo = document.getElementById("temp-div");
