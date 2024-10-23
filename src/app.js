@@ -34,6 +34,13 @@ function getWeather() {
     });
 }
 
+document.addEventListener("keypress", function (event) {
+  if ("Enter" === event.key) {
+    getWeather();
+    //console.log("Key pressed");
+  }
+});
+
 window.getWeather = getWeather;
 
 function displayWeather(data) {
